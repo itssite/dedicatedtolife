@@ -82,7 +82,6 @@
       background: linear-gradient(135deg, rgba(124,247,194,.18), rgba(122,167,255,.14));
     }
 
-    /* Hero */
     header.hero{ padding: 58px 0 30px; }
     .hero-grid{
       display:grid;
@@ -99,172 +98,29 @@
       position:relative;
     }
     .hero-content{ padding: 34px; }
-    .kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      font-size:13px; color: var(--muted);
-      border:1px solid var(--line);
-      padding:8px 12px; border-radius:999px;
-      background: rgba(255,255,255,.03);
-    }
-    .dot{
-      width:8px; height:8px; border-radius:50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 6px rgba(124,247,194,.12);
-    }
     h1{
       margin:16px 0 12px;
       font-size: 44px;
       line-height: 1.08;
       letter-spacing: -0.6px;
     }
-    .sub{
-      margin:0 0 20px;
-      color: var(--muted);
-      font-size: 16px;
-      max-width: 62ch;
-    }
-    .sub a{ color: var(--accent); text-decoration:none; border-bottom:1px solid rgba(124,247,194,.35); }
-    .sub a:hover{ border-bottom-color: rgba(124,247,194,.7); }
-    .hero-actions{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px;}
-    .trust{
-      display:flex; flex-wrap:wrap; gap:10px;
-      margin-top: 18px;
-      color: var(--muted);
-      font-size:13px;
-    }
-    .pill{
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      padding:8px 10px;
-      border-radius: 999px;
-    }
-    .hero-media{
-      height:100%;
-      min-height: 420px;
-      display:flex;
-      flex-direction:column;
-      gap:14px;
-      padding: 14px;
-    }
-    .img{
-      border-radius: 18px;
-      border: 1px solid var(--line);
-      overflow:hidden;
-      position:relative;
-      flex:1;
-      min-height: 160px;
-      background: #0a0e13;
-    }
-    .img img{ width:100%; height:100%; object-fit:cover; display:block; }
-    .img .cap{
-      position:absolute; left:12px; bottom:12px;
-      font-size:12px; color: rgba(234,241,248,.92);
-      background: rgba(11,15,20,.65);
-      border:1px solid rgba(255,255,255,.14);
-      padding:8px 10px; border-radius: 999px;
-      backdrop-filter: blur(10px);
-    }
-
-    /* Sections */
-    section{ padding: 30px 0; }
-    .section-head{
-      display:flex; justify-content:space-between; align-items:flex-end;
-      gap: 18px;
-      margin-bottom: 14px;
-    }
-    h2{ margin:0; font-size: 28px; letter-spacing: -.3px; }
-    .lead{ margin:0; color: var(--muted); max-width: 75ch; }
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 16px;
-    }
-    .card{
-      grid-column: span 4;
-      background: rgba(255,255,255,.03);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 18px;
-      box-shadow: 0 10px 34px rgba(0,0,0,.35);
-    }
-    .card h3{ margin:0 0 8px; font-size: 16px; }
-    .card p{ margin:0; color: var(--muted); font-size: 14px; }
-
-    .split{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      align-items:stretch;
-    }
-    .panel{
-      background: rgba(255,255,255,.03);
-      border:1px solid var(--line);
-      border-radius: var(--radius2);
-      overflow:hidden;
-      box-shadow: var(--shadow);
-    }
-    .panel .pad{ padding: 22px; }
-    .panel ul{ margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
-    .panel li{ margin: 8px 0; }
-    .panel .media{ height: 260px; }
-    .panel .media img{ width:100%; height:100%; object-fit:cover; display:block; }
-
-    /* FAQ */
-    details{
-      background: rgba(255,255,255,.03);
-      border:1px solid var(--line);
-      border-radius: 14px;
-      padding: 14px 16px;
-    }
-    summary{ cursor:pointer; font-weight:800; letter-spacing:-.2px; }
-    details p{ margin:10px 0 0; color: var(--muted); font-size:14px; }
-
-    /* Map/NAP */
-    .mapwrap{
-      border-radius: var(--radius2);
-      overflow:hidden;
-      border:1px solid var(--line);
-      box-shadow: var(--shadow);
-      background:#0a0e13;
-    }
-    iframe{ width:100%; border:0; }
-    footer{
-      padding: 34px 0 54px;
-      border-top: 1px solid var(--line);
-      margin-top: 18px;
-    }
-    .nap{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 16px;
-      margin-top: 16px;
-    }
-    .nap .box{
-      background: rgba(255,255,255,.03);
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 18px;
-    }
-    .muted{ color: var(--muted); }
 
     @media (max-width: 980px){
       .hero-grid{ grid-template-columns:1fr; }
       h1{ font-size: 36px; }
-      .split{ grid-template-columns:1fr; }
-      .card{ grid-column: span 12; }
       .navlinks{ display:none; }
-      .nap{ grid-template-columns:1fr; }
     }
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHNVPC5CSV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GHNVPC5CSV');
-</script>
   </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHNVPC5CSV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GHNVPC5CSV');
+  </script>
 
   <!-- Schema: LocalBusiness -->
   <script type="application/ld+json">
@@ -286,345 +142,28 @@
 </head>
 
 <body>
-  <!-- Top Bar -->
   <div class="topbar">
     <div class="container">
       <div class="nav">
         <a class="brand" href="#top">
-          <span class="logo" aria-hidden="true"></span>
+          <span class="logo"></span>
           <div>
             <strong>Dedicated to Life</strong><br />
             <small>High-End Personal Training Studio • Nijmegen</small>
           </div>
         </a>
-
-        <nav class="navlinks" aria-label="Primary navigation">
-          <a href="#services">Services</a>
-          <a href="#vip">VIP Experience</a>
-          <a href="#method">Method</a>
-          <a href="#faq">FAQ</a>
-          <a href="#location">Location</a>
-        </nav>
-
-        <div class="cta">
-          <a class="btn" href="https://dedicatedtolife.nl/" target="_blank" rel="noopener">Visit Website</a>
-          <a class="btn primary" href="#intake">Book VIP Intake</a>
-        </div>
       </div>
     </div>
   </div>
 
-  <!-- Hero -->
   <header class="hero" id="top">
     <div class="container">
-      <div class="hero-grid">
-        <div class="hero-card">
-          <div class="hero-content">
-            <div class="kicker">
-              <span class="dot" aria-hidden="true"></span>
-              Personal Trainer Nijmegen • Personal Training Nijmegen
-            </div>
-
-            <h1>Private, high-end personal training in Nijmegen—made for real life.</h1>
-
-            <!-- 1st paragraph includes URL with site name as requested -->
-            <p class="sub">
-              <strong>Dedicated to Life</strong> (<a href="https://dedicatedtolife.nl/" target="_blank" rel="noopener">dedicatedtolife.nl</a>) is a premium personal training studio in Nijmegen
-              for people who want focused coaching, clear structure, and results that last. Our approach combines smart strength training, lifestyle coaching,
-              and accountability—so you don’t just “work out,” you build a stronger body and a better routine.
-            </p>
-
-            <div class="hero-actions" id="intake">
-              <a class="btn primary" href="#contact">Reserve a VIP Intake</a>
-              <a class="btn" href="#services">Explore Training Options</a>
-            </div>
-
-            <div class="trust" aria-label="Trust highlights">
-              <span class="pill">Private studio setting</span>
-              <span class="pill">1:1 coaching & technique focus</span>
-              <span class="pill">Strength + lifestyle support</span>
-              <span class="pill">Built for busy schedules</span>
-            </div>
-          </div>
-        </div>
-
-        <aside class="hero-card hero-media" aria-label="Studio imagery">
-          <!-- Working images (stock). Replace with your real photos anytime -->
-          <div class="img">
-            <img
-              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80"
-              alt="High-end personal training environment"
-              loading="lazy"
-            />
-            <span class="cap">Focused, premium atmosphere</span>
-          </div>
-          <div class="img" style="flex:.9">
-            <img
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1600&q=80"
-              alt="One-on-one personal training session"
-              loading="lazy"
-            />
-            <span class="cap">1:1 coaching</span>
-          </div>
-        </aside>
-      </div>
+      <h1>Private, high-end personal training in Nijmegen—made for real life.</h1>
     </div>
   </header>
 
-  <!-- Services -->
-  <section id="services">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Personal Training Nijmegen with a boutique approach</h2>
-          <p class="lead">
-            Dedicated to Life is designed for people who value quality: a private space, professional coaching, and a plan that fits your life.
-            If you’re searching for a <strong>Personal Trainer Nijmegen</strong> who focuses on long-term results, you’re in the right place.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3>1:1 Personal Training</h3>
-          <p>Private sessions built around your goals—fat loss, strength, posture, performance, or simply feeling better in your body.</p>
-        </div>
-        <div class="card">
-          <h3>Strength & Technique Coaching</h3>
-          <p>We train smart: form-first coaching, safe progression, and programs that support joints, energy, and confidence.</p>
-        </div>
-        <div class="card">
-          <h3>Lifestyle & Habit Support</h3>
-          <p>Training works when your week supports it. We help with consistency, routine-building, and realistic habits.</p>
-        </div>
-        <div class="card">
-          <h3>Body Composition</h3>
-          <p>Build lean muscle, reduce body fat, and improve how you look and feel—without extreme plans you can’t sustain.</p>
-        </div>
-        <div class="card">
-          <h3>Accountability</h3>
-          <p>Clear check-ins, progress tracking, and a coach who keeps you aligned—so you stay consistent when motivation fades.</p>
-        </div>
-        <div class="card">
-          <h3>Busy Schedule Friendly</h3>
-          <p>We build your plan around your real life. The goal is training that strengthens your week—not stress that breaks it.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIP Experience -->
-  <section id="vip">
-    <div class="container">
-      <div class="split">
-        <div class="panel">
-          <div class="media">
-            <img
-              src="https://images.unsplash.com/photo-1518611012118-f0c5d7d5f8c5?auto=format&fit=crop&w=1600&q=80"
-              alt="Boutique strength training equipment"
-              loading="lazy"
-            />
-          </div>
-          <div class="pad">
-            <h2>VIP studio experience (no crowded gym vibe)</h2>
-            <p class="muted">
-              Dedicated to Life is built for clients who want a premium training environment:
-              calm, private, and focused—so you can train with confidence.
-            </p>
-            <ul>
-              <li><strong>Private setting</strong> with full attention on you</li>
-              <li><strong>Professional coaching</strong> with technique-first guidance</li>
-              <li><strong>Structured progression</strong> so every week has a purpose</li>
-              <li><strong>Support beyond sessions</strong> to keep momentum strong</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="panel" id="method">
-          <div class="pad">
-            <h2>The Dedicated Method</h2>
-            <p class="muted">
-              We keep it clear and measurable. Your program is built around your goals, your starting point, and your lifestyle—then refined through progress.
-              This is why our <strong>Personal Training Nijmegen</strong> feels different: it’s not random workouts, it’s a system.
-            </p>
-
-            <div class="grid" style="margin-top:14px">
-              <div class="card" style="grid-column: span 12;">
-                <h3>Step 1: VIP Intake</h3>
-                <p>We map your goals, training history, lifestyle, and constraints—so your plan fits your reality.</p>
-              </div>
-              <div class="card" style="grid-column: span 12;">
-                <h3>Step 2: Personal Plan</h3>
-                <p>Strength programming + weekly structure + simple lifestyle priorities that support results.</p>
-              </div>
-              <div class="card" style="grid-column: span 12;">
-                <h3>Step 3: Coach, Track, Progress</h3>
-                <p>We build consistency, refine technique, and progress the plan—so you keep moving forward.</p>
-              </div>
-            </div>
-
-            <div class="hero-actions" style="margin-top:14px">
-              <a class="btn primary" href="#contact">Reserve VIP Intake</a>
-              <a class="btn" href="https://dedicatedtolife.nl/" target="_blank" rel="noopener">Learn More</a>
-            </div>
-          </div>
-          <div class="media">
-            <img
-              src="https://images.unsplash.com/photo-1526401485004-2fda9f6b2a86?auto=format&fit=crop&w=1600&q=80"
-              alt="Personal training planning and coaching"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Who It's For -->
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Who we help</h2>
-          <p class="lead">
-            Our Personal Trainer Nijmegen coaching is ideal if you want a premium experience and a plan that makes sense.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Busy professionals</h3>
-          <p>Training that fits your schedule and reduces stress—while improving strength, posture, and energy.</p>
-        </div>
-        <div class="card">
-          <h3>People who want structure</h3>
-          <p>If you’re tired of random routines, we build a clear system you can stick to.</p>
-        </div>
-        <div class="card">
-          <h3>Clients ready for real change</h3>
-          <p>We focus on sustainable habits and long-term results—not quick fixes.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>FAQ</h2>
-          <p class="lead">Quick answers before you book your VIP intake.</p>
-        </div>
-      </div>
-
-      <div class="grid" style="gap:12px">
-        <div class="card" style="grid-column: span 12; padding:0; background:transparent; border:0; box-shadow:none;">
-          <details>
-            <summary>Do I need to be fit already?</summary>
-            <p>No. We adapt everything to your level. The goal is safe progression, better technique, and consistent momentum.</p>
-          </details>
-        </div>
-
-        <div class="card" style="grid-column: span 12; padding:0; background:transparent; border:0; box-shadow:none;">
-          <details>
-            <summary>How many sessions per week is best?</summary>
-            <p>Most clients start with 1–3 sessions weekly. We’ll recommend a plan that fits your goals and lifestyle.</p>
-          </details>
-        </div>
-
-        <div class="card" style="grid-column: span 12; padding:0; background:transparent; border:0; box-shadow:none;">
-          <details>
-            <summary>Is this only strength training?</summary>
-            <p>Strength is a foundation, but your plan can include mobility, conditioning, posture work, and lifestyle habits—based on your needs.</p>
-          </details>
-        </div>
-
-        <div class="card" style="grid-column: span 12; padding:0; background:transparent; border:0; box-shadow:none;">
-          <details>
-            <summary>How do I start?</summary>
-            <p>Book a VIP intake. We’ll map your goals, your schedule, and your starting point—then build your plan.</p>
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="panel">
-        <div class="pad">
-          <h2>Book your VIP intake</h2>
-          <p class="muted">
-            Ready for high-end <strong>Personal Training Nijmegen</strong> with a calm studio atmosphere and real coaching?
-            Reach out and reserve your intake.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="tel:+31643501521">Call: +31 6 43501521</a>
-            <a class="btn" href="https://dedicatedtolife.nl/" target="_blank" rel="noopener">Visit: dedicatedtolife.nl</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MAP + NAP -->
-  <section id="location">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Location</h2>
-          <p class="lead">Find Dedicated to Life at our Nijmegen studio.</p>
-        </div>
-      </div>
-
-      <div class="mapwrap">
-        <iframe
-          src="https://www.google.com/maps/d/embed?mid=10mbYrfh9_UEeWV06TGsvxLRGwmKlI-k&ehbc=2E312F"
-          height="420"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Dedicated to Life - Nijmegen Map">
-        </iframe>
-      </div>
-
-      <footer>
-        <div class="section-head">
-          <div>
-            <h2>NAP</h2>
-            <p class="lead">Name, Address, Phone</p>
-          </div>
-        </div>
-
-        <div class="nap">
-          <div class="box">
-            <strong>Dedicated to Life</strong><br />
-            <span class="muted">High-end Personal Training Studio</span><br /><br />
-            <span class="muted">Address:</span><br />
-            Distributieweg 11, 6541 DR Nijmegen, Netherlands
-          </div>
-
-          <div class="box">
-            <span class="muted">Phone:</span><br />
-            <a href="tel:+31643501521" style="text-decoration:none; font-weight:800;">+31643501521</a>
-            <br /><br />
-            <span class="muted">Website:</span><br />
-            <a href="https://dedicatedtolife.nl/" target="_blank" rel="noopener" style="text-decoration:none; font-weight:800;">https://dedicatedtolife.nl/</a>
-          </div>
-        </div>
-
-        <p class="muted" style="margin-top:16px; font-size:12px;">
-          © <span id="year"></span> Dedicated to Life • Personal Trainer Nijmegen • Personal Training Nijmegen
-        </p>
-      </footer>
-    </div>
-  </section>
-
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year")?.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
